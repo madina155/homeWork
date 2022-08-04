@@ -98,3 +98,17 @@
 //         console.log('осень')
 // }
 //10
+let time = 25
+if (time > 0 || time <= 15) {
+    console.log("время относится к четверти часа")
+}
+else if (time > 15 || time <= 30) {
+    console.log("время относится к половине часа")
+}
+else if (time > 30 || time<= 45) {
+    console.log("время относится к 3/4 часа")
+} else if (time > 45 || time <= 60) {
+    console.log("время относится к целому часу")
+} else {
+    console.log("неизвестный диапазон")
+}
