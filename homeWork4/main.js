@@ -5,6 +5,7 @@
 // } else {
 //     console.log('не верно')
 // }
+// a === 'test' ? console.log('верно') : console.log('неверно')
 
 
 //2
@@ -16,27 +17,46 @@
 //     number = 3
 // }
 // console.log(number)
-
-
+//
+//
 // data === true ? console.log(number) : console.log(number)
 
 
 //3
-// let time = '9:00 12:00'
+// let time = prompt('когда вы приедете?')
 // switch (time) {
-//     case  time > '23:00' || time < '9:00' :
-//         console.log('В это время мы не работаем')
+//     case  '23:00':
+//     case  '00:00':
+//     case  '01:00':
+//     case  '02:00':
+//     case  '03:00':
+//     case  '04:00':
+//     case  '05:00':
+//     case  '06:00':
+//     case  '07:00':
+//     case  '08:00':
+//     case  '09:00':
+//         alert('В это время мы не работаем')
 //         break
-//     case '9:00 12:00':
-//         console.log('Будем рады вас видеть')
+//     case '10:00':
+//     case '11:00':
+//         alert('Будем рады вас видеть')
 //         break
-//     case '12:00 13:00':
-//         console.log('У нас обед')
+//     case '12:00':
+//     case '13:00':
+//         alert('У нас обед')
 //         break
-//     case '13:00 23:00':
-//         console.log('Будем рады вас видеть')
+//     case '14:00':
+//     case '15:00':
+//     case '16:00':
+//     case '17:00':
+//     case '18:00':
+//     case '19:00':
+//     case '20:00':
+//     case '21:00':
+//     case '22:00':
+//         alert('Будем рады вас видеть')
 // }
-// prompt('Когда вы собираеттесь прийти в магазин?')
 
 //4
 // let m = 75
@@ -48,27 +68,37 @@
 //     console.log('маленький')
 // }
 
+// let a = 5
+// if (a === 0 || a === 2) {
+//     console.log(a + 7)
+// } else {
+//     console.log(a / 10)
+// }
+//
+// a === 0 || a === 2 ? console.log(a + 7) : console.log(a / 10)
+
 //6
-// confirm('Сколько вам лет?')
-// let age = 15
-// if (age > 18) {
+//
+// let person = confirm('Сколько вам лет?')
+// if (person) {
 //     console.log('есть')
 // } else {
 //     console.log('нет')
 // }
 
 //7
-// let a  = 1
-// let b = 4
-// if (a <= 1 || b >= 3){
+// let a  = 3
+// let b = 5
+// if (a <= 1 && b >= 3){
 //     console.log(a + b)
 // } else {
-//     console.log(b - a)
+//     console.log(a - b)
 // }
+// a <= 1 && b >= 3 ? console.log(a + b) : console.log(a - b)
 
 //8
-// let name = 17
-// if (name <= 17) {
+// let Pasha = 17
+// if (Pasha <= 17) {
 //     console.log('Он еще ребенок')
 // } else {
 //     console.log('Он уже врослый')
@@ -98,17 +128,17 @@
 //         console.log('осень')
 // }
 //10
-let time = 25
-if (time > 0 || time <= 15) {
-    console.log("время относится к четверти часа")
-}
-else if (time > 15 || time <= 30) {
-    console.log("время относится к половине часа")
-}
-else if (time > 30 || time<= 45) {
-    console.log("время относится к 3/4 часа")
-} else if (time > 45 || time <= 60) {
-    console.log("время относится к целому часу")
-} else {
-    console.log("неизвестный диапазон")
-}
+// let time = 317
+// if (time > 0 && time <= 15) {
+//     console.log("время относится к четверти часа")
+// }
+// else if (time > 15 && time <= 30) {
+//     console.log("время относится к половине часа")
+// }
+// else if (time > 30 && time<= 45) {
+//     console.log("время относится к 3/4 часа")
+// } else if (time > 45 && time <= 60) {
+//     console.log("время относится к целому часу")
+// } else {
+//     console.log("неизвестный диапазон")
+// }
