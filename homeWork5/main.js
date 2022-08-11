@@ -65,7 +65,7 @@
 
 //9
 // let arr = [-2, 7, '9б', 'Vlad', 1, 12, 15, 'Ivan', 17, 3]
-// for (let i = 0;i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 //
 //         console.log(arr[i])
 //
