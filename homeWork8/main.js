@@ -71,6 +71,7 @@
 
 //7
 // const filterFunc = (arr) => {
+
 //     return arr.filter((item) => {
 //         return item.length <= 5
 //     })
