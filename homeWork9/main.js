@@ -1,11 +1,7 @@
 //1
-// const task1 = (arr) => {
+// const task1 = (arr, arr2) => {
 //     return arr.reduce((acc, rec, idx) => {
-//         for (let i = 0; i < arr.length; i++) {
-//             if (idx === 0) {
-//                 return acc + rec
-//             }
-//         }
+//         return [...acc, rec + arr2[idx]]
 //     }, [])
 // }
 // console.log(task1([2, 4] , [1, 3]))
@@ -135,16 +131,15 @@
 
 
 //12
-// const task12 = (arr) => {
-//     return arr.reduce((acc, rec) => {
-//         if (rec.keys === 'string') {
-//             return [...acc, rec]
+// const task12 = (obj) => {
+//     return Object.keys(obj).reduce((acc, rec) => {
+//         if (typeof obj[rec] === 'string') {
+//             return {...acc, [rec]: obj[rec]}
 //         }
 //         return acc
-//     }, [])
+//         },{})
 // }
-// console.log(task12([{isActive: true, name: 'pilot'}]))
-// console.log(task12([undefined, true, undefined]))
+// console.log(task12({isActive: true, name: 'pilot'}))
 
 
 //14
@@ -158,8 +153,13 @@
 
 
 //15
-
-
-
+// const task15 = (arr, num) => {
+//     return arr.reduce((acc, rec) => {
+//         return rec(acc)
+//     }, num)
+// }
+// console.log(task15([(a) => a + 1, (a) => a * 2 ], 5))
+// console.log(task15([ (a) => a - 1, (a) => a * 2 ], 5))
+// console.log(task15([ (a) => a + 2, (a) => a * 5, (a) => a - 5 ], 3))
 
 
