@@ -73,6 +73,15 @@
 // }
 
 //7
+// const task7 = (key, val, arr) => {
+//     return arr.reduce((acc, rec) =>{
+//         if (rec[key].includes(val)) {
+//             return [...acc, rec]
+//         }
+//         return acc
+//     },[])
+// }
+// console.log(task7('title', 'hello', [{title:'hello world', rating: 1}, {title:'not a helloo', rating: 5}, {title:'new World', rating: 0}]))
 
 
 //8
@@ -100,28 +109,31 @@
 
 //11
 // try {
-//     const  task11 = (arr) => {
-//         return arr.split('').map((item) => {
-//             if (item.length < 2) {
-//                 return item
-//             } else if (item.length === 2) {
-//                 return item
+//     const task11 = (str, num) => {
+//         return str.split('').reduce((acc, rec) => {
+//             if (acc[acc.length - 1].length < num) {
+//                 acc[acc.length - 1] = acc[acc.length - 1] + rec
+//                 return acc
 //             }
-//         })
+//             return [...acc, rec]
+//         }, [''])
 //     }
-// console.log(task11('abrac'))
+// console.log(task11('abrac', 2))
 // } catch (err) {
-//    console.log(`You have an error in function task10 : ${err.message}`)
+//    console.log(`You have an error in function task11 : ${err.message}`)
+//}
+
+// try {
+//     const task2 = arr => arr.reduce((acc, rec) => {
+//        if(rec > 0) {
+//             return [...acc,`+${rec - 10}`]
+//         }
+//         return [...acc, `${rec - 10}`]
+//         }, [])
+//     console.log(task2([10, 20, 25, 0]))
+// } catch (err) {
+//     console.log(`You have an error in function task2 : ${err.message}`)
 // }
-
-
-//
-function qwerty(str) {
-    return str.split("").reverse().join("")
-}
-console.log(qwerty('hello'))
-
-
 
 
 
